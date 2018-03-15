@@ -18,7 +18,7 @@ public func ReturnTestMessage() -> String
 public struct structStudentModel : Mappable
 {
     public var studentName: String?
-    public var studnetEmail: String?
+    public var studentEmail: String?
     
     public init?(map: Map) {
         
@@ -26,7 +26,7 @@ public struct structStudentModel : Mappable
     
     public mutating func mapping(map: Map) {
         studentName     <- map["studentName"]
-        studentName     <- map["studentName"]
+        studentEmail     <- map["studentEmail"]
     }
 }
 
